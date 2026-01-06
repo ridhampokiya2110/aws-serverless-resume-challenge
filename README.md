@@ -2,7 +2,6 @@
 Project Overview
 This project is a full-stack, serverless web application built on Amazon Web Services (AWS). It hosts a professional DevOps-focused resume with a dynamic visitor counter. The project demonstrates proficiency in cloud architecture, infrastructure security, and serverless computing.
 
-🌐 View Live Project Here
 🏗️ System Architecture
 The application is built using a completely serverless stack to ensure high availability, global performance, and zero cost under the AWS Free Tier.
 
