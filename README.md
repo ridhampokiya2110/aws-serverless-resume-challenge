@@ -39,14 +39,6 @@ The Lambda function retrieves the current count from DynamoDB, increments it by 
 
 CORS (Cross-Origin Resource Sharing) was configured to allow only specific headers and methods, preventing unauthorized domain requests.
 
-🧩 Challenges & Troubleshooting
-A major part of this project involved debugging complex cloud configuration issues:
-
-The S3 "Access Denied" Bug: Solved the XML error issue by identifying a mismatch between the CloudFront Distribution ID and the S3 Bucket Policy. I successfully reconfigured the Origin Access Control (OAC) settings and performed Cache Invalidations to force update the CDN.
-
-Schema Initialization: Resolved Lambda execution errors by manually initializing the DynamoDB table with a primary key (id: 1) and a starting attribute (visitors: 0).
-
-API Integration: Debugged frontend-to-backend communication by implementing custom headers in the Lambda response to satisfy CORS requirements.
 
 📖 Project Setup Steps
 S3: Create bucket and upload index.html, style.css, and script.js.
