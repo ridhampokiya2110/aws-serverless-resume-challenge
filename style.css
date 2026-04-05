@@ -1,46 +1,9 @@
-:root {
-    --aws-blue: #232f3e;
-    --accent-orange: #ff9900;
-}
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f2f5;
-    color: #333;
-    line-height: 1.6;
-    display: flex;
-    justify-content: center;
-    padding: 40px 20px;
-}
-
-.resume-container {
-    background: #fff;
-    max-width: 700px;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    border-top: 8px solid var(--aws-blue);
-}
-
-header h1 { margin: 0; color: var(--aws-blue); }
-header h3 { color: var(--accent-orange); margin-top: 5px; }
-
-section { margin-top: 25px; }
-h2 { border-bottom: 2px solid #eee; padding-bottom: 5px; color: var(--aws-blue); }
-
-ul { display: flex; flex-wrap: wrap; list-style: none; padding: 0; }
-li { background: #e9ecef; margin: 5px; padding: 5px 12px; border-radius: 4px; font-size: 0.9em; }
-
-.visitor-box {
-    margin-top: 30px;
-    background: var(--aws-blue);
-    color: white;
-    padding: 15px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-#visitor-count { font-size: 1.2em; font-weight: bold; color: var(--accent-orange); }
-
-footer { margin-top: 20px; text-align: center; }
-footer a { color: var(--aws-blue); text-decoration: none; font-weight: bold; margin: 0 10px; }
+:root { --aws-blue: #232f3e; --aws-orange: #ff9900; --light-bg: #f4f7f9; }
+body { font-family: 'Segoe UI', sans-serif; background-color: var(--light-bg); display: flex; justify-content: center; padding: 20px; }
+.resume-container { background: white; max-width: 700px; padding: 40px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); border-top: 8px solid var(--aws-blue); }
+header h1 { margin: 0; color: var(--aws-blue); letter-spacing: -1px; }
+h2 { color: var(--aws-blue); border-bottom: 2px solid var(--aws-orange); display: inline-block; margin-top: 30px; }
+.skills-grid { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+.skills-grid span { background: #eef2f6; padding: 5px 12px; border-radius: 20px; font-size: 0.9em; font-weight: 600; color: #444; }
+.counter-wrapper { margin-top: 40px; padding: 10px; background: var(--aws-blue); color: white; border-radius: 8px; text-align: center; }
+#count { color: var(--aws-orange); font-size: 1.2em; font-weight: bold; }
